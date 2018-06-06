@@ -1,0 +1,44 @@
+{
+  "version" : "0.1.0",
+  "manifest_version": 2,
+  "name": "Philadelphia Traffic Cams",
+  "homepage_url": "http://gajo.us/",
+  "description": "View local traffic cams",
+
+  "permissions": [
+    "activeTab",
+    ],
+
+  "page_action": {
+    "default_title": "DataArts Support",
+    "default_icon": {
+        "16": "images/icon16.png",
+        "24": "images/icon24.png",
+        "32": "images/icon32.png",
+        "96": "images/icon96.png",
+        "128": "images/icon128.png"
+      }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "24": "images/icon24.png",
+    "32": "images/icon32.png",
+    "96": "images/icon96.png",
+    "128": "images/icon128.png"
+  },
+  "content_scripts": [ {
+    "all_frames": true,
+    "js": [ "content.js" ],
+    "matches": [
+    ]
+  } ],
+  "background": {
+    "scripts": ["background.js", ]
+  },
+  "externally_connectable": {
+    "matches": [
+    ]
+  }
+
+
+}
